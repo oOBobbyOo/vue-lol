@@ -1,0 +1,77 @@
+http://lolapi.games-cube.com/UserArea?keyword={keyword}
+keyword:游戏用户名，如果游戏用户名为中文或是特殊字符需要进行URL编码后再传递
+
+http://lolapi.games-cube.com/UserHotInfo?qquin={qquin}&vaid={vaid}
+qquin:英雄联盟用户唯一标识，获取方式从API UserArea中进行获取
+vaid:大区ID
+
+http://lolapi.games-cube.com/Free
+
+http://lolapi.games-cube.com/ChampionRank?championid={championid}&p={p}
+championid:英雄标识，获取方式从API Champion中进行获取
+p:指定页数
+
+http://lolapi.games-cube.com/GetChampionDetail?champion_id={champion_id}
+champion_id:英雄ID，来源于接口国服API字典数据-英雄数据 [Champion]
+
+http://lolapi.games-cube.com/UserExtInfo?qquin={qquin}&vaid={vaid}
+qquin:英雄联盟用户唯一标识，获取方式从API UserArea中进行获取
+vaid:大区唯一标识
+
+http://lolapi.games-cube.com/BattleSummaryInfo?qquin={qquin}&vaid={vaid}
+qquin:英雄联盟用户唯一标识，获取方式从API UserArea中进行获取
+vaid:大区唯一标识
+
+http://lolapi.games-cube.com/CombatList?qquin={qquin}&vaid={vaid}&p={p}
+qquin:英雄联盟用户唯一标识，获取方式从API UserArea中进行获取
+vaid:区服ID
+p:分页信息
+
+http://lolapi.games-cube.com/GameDetail?qquin={qquin}&vaid={vaid}&gameid={gameid}
+qquin:英雄联盟用户唯一标识，获取方式从API UserArea中进行获取
+vaid:大区ID
+gameid:英雄联盟游戏唯一标识
+
+http://lolapi.games-cube.com/champion
+
+http://lolapi.games-cube.com/Area
+
+http://lolapi.games-cube.com/GetTierQueue?tier={tier}&queue={queue}
+参数来源于个人战绩汇总[BattleSummaryInfo]接口的输出 
+tier:段位
+queue:级别
+
+http://lolapi.games-cube.com/GetUserIcon?iconid={iconid}
+iconid:用户图标ID，图标ID来源于国服API-用户区域 [UserArea]
+
+http://lolapi.games-cube.com/GetAreaName?id={id}
+id:大区ID
+
+http://lolapi.games-cube.com/GetChampionSkin?champion_id={champion_id}&skinid={skinid}
+skinid:皮肤ID,通过GetChampionDetail接口获取英雄详细信息，skins信息的id作为本接口的skinid
+
+http://lolapi.games-cube.com/GetChampionIcon?championname={championname}
+http://lolapi.games-cube.com/GetChampionIcon?id={id}
+
+http://lolapi.games-cube.com/GetSummonSpellIcon?summonspellid={summonspellid}
+
+http://lolapi.games-cube.com/GetitemIcon?itemid={itemid}
+
+http://lolapi.games-cube.com/GetChampionCNName?id={id}
+
+http://lolapi.games-cube.com/GetChampionENName?id={id}
+
+http://lolapi.games-cube.com/GetMapName?id={id}
+id:地图ID,参数通过接口GameDetail,battle_map作为本接口的id
+
+http://lolapi.games-cube.com/GetMapImage?id={id}
+id:地图ID
+
+http://lolapi.games-cube.com/GetJudgement?flag={flag}
+flag:单场比赛中的Flag
+
+http://lolapi.games-cube.com/GetWin?win={win}
+
+http://lolapi.games-cube.com/GetGameType?game_type={game_type}
+
+
